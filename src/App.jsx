@@ -11,7 +11,7 @@ const App = () => {
   const [countries, setCountries] = useState([]);
   const [error, setError] = useState(null);
 
-  // Function to fetch Oceania countries
+  // Function to fetch Oceania countries - API call to the backend
   const fetchOceaniaCountries = async () => {
     try {
       const response = await axios.get(`${API_HOST}/oceania`);
